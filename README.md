@@ -73,14 +73,12 @@ var myNumber = 3;
 
 if ( myNumber == 3 ) {
   alert("Its true!");
-} else {
-  alert("Its false");
 }
 </code></pre>
 
 This statement evaluates whether myNumber is equals 3. Note that there are two equal signs between myNumber and 3.
 
-Before we go on lets switch to the following
+Before we go on lets switch the code to the following:
 
 <pre><code>
 var myNumber = 3;
@@ -92,7 +90,9 @@ if ( myNumber == 3 ) {
 }
 </code></pre>
 
-What are the results if you change the if statement as follows.
+Now make sure the JavaScript console is open and reload the page.
+
+Lets try out some different conditionals statements. Replace the current if statement.
 
 * <code>if( 5 &gt; 2 )</code>
 * <code>if( 5 &lt; 2 )</code>
