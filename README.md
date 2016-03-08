@@ -1,8 +1,8 @@
 # JavaScript in class exercise
 
-Welcome to programming. Up until now you have been dealing exclusively with markup languages and stylesheets. JavaScript is a full fledged programming language. While it was originally designed to augment webpages and continues in this role. It is used a variety of ways to on and off the web. In fact Brackets, the text editor we have been using is written in JavaScript.
+Welcome to programming. Up until now you have been dealing exclusively with markup languages and stylesheets. JavaScript is a full fledged programming language. While it was originally designed to augment webpages, it is used in a variety of ways to on and off the web. In fact Brackets, the text editor we have been using is written in JavaScript.
 
-#Part 1
+##Part 1
 
 This first part can be done completely in the **JavaScript console** inside any browser, on any webpage.
 
@@ -10,7 +10,6 @@ This first part can be done completely in the **JavaScript console** inside any 
 * Enter <code>alert("Hello World!");</code> into the JavaScript console.
 * Enter <code>console.log("Hello World!");</code> into the console.
 * Enter any number. What happens?
-* Enter
 
 ### Variables
 
@@ -49,19 +48,47 @@ This first part can be done completely in the **JavaScript console** inside any 
 
 ## Part II
 
-For this part it is easier if we work with a file. We will be moving back between the text editor and the browser to test our results. You will need the JavaScript console open in the Browser to see some results and any errors in your code.
+Now lets work with JavaScript from within an HTML document. Open the <code>index.html</code> document included in this repository. It should contain the basic tags we have seen before. 
 
-## Comments
+Lets start by recreating our Hello world example from above. 
+
+First we need a place for our JavaScript in the document. Normally you want to load the JavaScript last, after the CSS and most of the HTML has loaded. This way viewers will see the main content first. 
+
+We will place ours just before the closing <code>&lt;/body</code> tag. Enter the following:
+
+<pre><code>
+&lt;script&gt;
+
+alert("Hello world");
+
+&lt;/script&gt;
+</code></pre>
+
+Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. Open the page in the browser, or if you already have reload it.
 
 ## Conditionals
 
 <pre><code>
 var myNumber = 3;
 
-if ( true ) {
+if ( myNumber == 3 ) {
   alert("Its true!");
 } else {
   alert("Its false");
+}
+</code></pre>
+
+This statement evaluates whether myNumber is equals 3. Note that there are two equal signs between myNumber and 3.
+
+Before we go on lets switch to the following
+
+<pre><code>
+var myNumber = 3;
+
+if ( myNumber == 3 ) {
+  console.log("Its true!");
+} else {
+  console.log("Its false");
 }
 </code></pre>
 
@@ -149,6 +176,8 @@ Loops are much more powerful when you add arrays.
   
   console.log( hello("Fred") );
 </code></pre>
+
+
 
 
 
