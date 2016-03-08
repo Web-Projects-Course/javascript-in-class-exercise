@@ -7,14 +7,22 @@ Welcome to programming. Up until now you have been dealing exclusively with mark
 This first part can be done completely in the **JavaScript console** inside any browser, on any webpage.
 
 ### Statements
-* Enter <code>alert("Hello World!");</code> into the JavaScript console.
+* Enter <code>alert("Hello World!");</code> into the JavaScript console and hit return.
 * Enter <code>console.log("Hello World!");</code> into the console.
 * Enter any number. What happens?
+* Enter <code>2 + 4</code>. What happens?
+* Try some other simple equations and see what happens.
 
 ### Variables
 
-* Create a variable called <code>x</code>. Assign it the value 3.
-* Create another variable <code>y</code>. Assign it the value of "x".
+Variables are what make programs flexible tools. If we could only enter numbers directly we couldn't change what a program does with different input.
+
+Lets create our first variable.
+
+* Write the following in the console. <code>var x = 3;</code> This creates the variable x and assigns it the value 3.
+* Enter <code>x</code> and hit return. You should see its value print out.
+* Create another variable <code>y</code>. Assign it the value of <code>x</code>.
+* Check y's value.
 * Assign the variable <code>x</code> the value 5. 
 * What is the value of <code>x</code> and <code>y</code> now? Why?
 * Create a variable <code>foo</code> assign it the String "Hello world ".
@@ -22,29 +30,31 @@ This first part can be done completely in the **JavaScript console** inside any 
 
 ### Operators
 
-* Add <code>x</code> and <code>y</code> and assign it to a variable "sum".
-* Subtract <code>x</code> and <code>y</code> and assign it to the variable "difference".
-* Multiply <code>x</code> and <code>y</code> and assign it to the variable "produce".
-* Divide <code>x</code> and <code>y</code> and assign it to the variable "quotient".
-* Replace the division operator with the <code>%</code> and assign it to the variable <code>result</code>.
-* What does <code>%</code> operator(also know as modulo) do?
-* Add <code>foo</code> and <code>bar</code> and assign to the variable <code>concat</code>.
-* Add <code>foo</code> and <code>x</code> and assign to <code>d</code>.
-* Add <code>x</code> + <code>foo</code> and assign to <code>e</code>.
+* Enter <code>var sum = x + y</code>. We can create new variables and assign them the results of operations like this.
+* Subtract <code>x</code> and <code>y</code> and assign it to the variable <code>difference</code>.
+* Multiply <code>5</code> and <code>y</code> and assign it to the variable <code>product</code>.
+* Divide <code>9</code> and <code>4</code> and assign it to the variable <code>quotient</code>.
+* Enter <code>var result = 9 % 4</code>.
+* Can you figure out what the <code>%</code> operator(also know as modulo) does? *HINT: It has something to do with division.*
+
+#### Strings
+* Add <code>foo</code> and <code>bar</code> and assign to the variable <code>combined</code>. What is the value of <code>combined</code>?
+* Add <code>foo</code> and <code>x</code> and assign to <code>d</code>. What is the value of <code>d</code>?
+* Add <code>x</code> and <code>foo</code> and assign to <code>e</code>. What is the value of <code>e</code>?
 * Can you explain what happened?
 * Add <code><code>x</code></code> and <code>bar</code> and assign to <code>f</code>.
 * Add <code>x</code> and Number(<code>bar</code>) and assign to <code>g</code>.
-* Why are <code>f </code>and <code>g</code> different?
-* Add <code>x</code> + Number(<code>foo</code>) and assign to <code>h</code>. What is the result?
+* Why are <code>f</code> and <code>g</code> different?
+* Enter <code>var h = x + Number(foo)</code>. What is the value of <code>h</code>?
 
-### Other operators
+#### Other operators
 
 * What is the current value of <code>x</code>?
 * Enter <code>w = x++</code>
 * What are the values of <code>x</code> and <code>w</code>? What happened?
 * Enter <code>v = ++x</code>
 * What are the values of <code>x</code> and <code>v</code>? What happened?
-* Enter <code>x += 10</code>; What is the value of <code>x</code> now?
+* Enter <code>x += 10;</code> What is the value of <code>x</code> now?
 
 ## Part II
 
@@ -68,6 +78,8 @@ Normally we will place our JavaScript in a separate file, but today we will just
 
 ## Conditionals
 
+Replace the contents of the <code>&lt;script&gt;</code> tag and replace it with the following:
+
 <pre><code>
 var myNumber = 3;
 
@@ -76,7 +88,7 @@ if ( myNumber == 3 ) {
 }
 </code></pre>
 
-This statement evaluates whether myNumber is equals 3. Note that there are two equal signs between myNumber and 3.
+This statement evaluates whether myNumber is equals 3. If it is we popup an alert message. Note that there are two equal signs between myNumber and 3.
 
 Before we go on lets switch the code to the following:
 
@@ -90,9 +102,9 @@ if ( myNumber == 3 ) {
 }
 </code></pre>
 
-Now make sure the JavaScript console is open and reload the page.
+Sending messages to the console is a little less annoying than an alert window. The else clause allows to run different code if the answer is false. Now make sure the JavaScript console is open and reload the page.
 
-Lets try out some different conditionals statements. Replace the current if statement.
+Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each.
 
 * <code>if( 5 &gt; 2 )</code>
 * <code>if( 5 &lt; 2 )</code>
