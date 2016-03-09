@@ -8,10 +8,10 @@ This first part can be done completely in the **JavaScript console** inside any 
 
 ### Statements
 * Enter `alert("Hello World!");` into the JavaScript console and hit return.
-* Enter `console.log("Hello World!");` into the console.
 * Enter any number. What happens?
 * Enter `2 + 4`. What happens?
-* Try some other simple equations and see what happens.
+* Try some other simple math equations and see what happens.
+* Here is something more complex. We will talk about the details later. `document.getElementsByTagName("h1")[0].textContent`. For now just see what it does. Don't worry if you get an error.
 
 ### Variables
 
@@ -149,6 +149,7 @@ while( index < 10 ) {
 * Change it to include the number 10.
 * Change it to list just even numbers.
 * How would you change it to list from 4 to 20?
+* Can you write a for loop that multiplies all the numbers between 1 and 10 and save the results in a variable?
 
 ## Arrays and objects
 
@@ -183,10 +184,30 @@ Loops are much more powerful when you add arrays.
   }
 ```
 
-* What happens when you run this code?
-* Can you write a for loop that multiplies all the numbers between 1 and 10 and save the results in a variable?
+Objects like arrays let you store more than one value in a single variable but can allow you to name those values and even add additional functionality to the variable that we will talk about later.
 
+Instead of this:
 
+```javascript
+  var artistName = "Barry";
+  var artistMedium = "Painting";
+  var artistAge = 32;
+```
+
+I could create an object that holds all of that information.
+
+```javascript
+  var artist = { name: "Barry", medium: "Painting", age: 32 };
+```  
+
+You can access the values of the object by using square brackets(similar to arrays) or using dot notation. We will primarily use dot notation.
+
+```javascript
+artist["name"]
+
+artist.name
+```
+You will see dot notation frequently. It can be used to refer to an objects properties (variables) or its methods (functions that run code).
 
 ## Functions
 
@@ -205,8 +226,12 @@ Functions make it easier to deal with code that you might use again and again.
 Functions can do more than just save chunks of code. They can return values to be used else where.
 
 ```javascript
-
+  function square( x ) {
+    return x * x;
+  }
 ```
+
+* Write your own function that returns a value based on input...
 
 ## DOM
 
