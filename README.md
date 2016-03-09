@@ -30,6 +30,8 @@ Lets create our first variable.
 
 ### Operators
 
+Once you have variables you will want to do something with them.
+
 * Enter `var sum = x + y`. We can create new variables and assign them the results of operations like this.
 * Subtract `x` and `y` and assign it to the variable `difference`.
 * Multiply `5` and `y` and assign it to the variable `product`.
@@ -37,7 +39,8 @@ Lets create our first variable.
 * Enter `var result = 9 % 4`.
 * Can you figure out what the `%` operator(also know as modulo) does? *HINT: It has something to do with division.*
 
-#### Strings
+#### Using operators on strings
+
 * Add `foo` and `bar` and assign to the variable `combined`. What is the value of `combined`?
 * Add `foo` and `x` and assign to `d`. What is the value of `d`?
 * Add `x` and `foo` and assign to `e`. What is the value of `e`?
@@ -49,6 +52,8 @@ Lets create our first variable.
 
 #### Other operators
 
+These operators are used for incrementing values and are common to see in others code.
+
 * What is the current value of `x`?
 * Enter `w = x++`
 * What are the values of `x` and `w`? What happened?
@@ -56,15 +61,21 @@ Lets create our first variable.
 * What are the values of `x` and `v`? What happened?
 * Enter `x += 10;` What is the value of `x` now?
 
+**STOP here before continuing to Part II**
+
+---
+
 ## Part II
 
-Now lets work with JavaScript from within an HTML document. Open the `index.html` document included in this repository. It should contain the basic tags we have seen before. 
+Now lets work with JavaScript from within an HTML document. 
 
-Lets start by recreating our Hello world example from above. 
+* Open the `index.html` document included in this repository.
+
+It should contain the basic HTML tags we have seen before.  Lets start by recreating our "Hello world" example from above. 
 
 First we need a place for our JavaScript in the document. Normally you want to load the JavaScript last, after the CSS and most of the HTML has loaded. This way viewers will see the main content first. 
 
-We will place ours just before the closing `</body>` tag. Enter the following:
+Just before the closing `</body>` tag, enter the following:
 
 ```javascript
 <script>
@@ -74,7 +85,9 @@ alert("Hello world");
 </script>
 ```
 
-Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. Open the page in the browser, or if you already have reload it.
+Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. Open the page in the browser or if you already have, reload it. Open the JavaScript console as we did in Part I.
+
+*Keep in mind that Live Preview in Brackets won't work with the JavaScript console open.*
 
 ## Conditionals
 
@@ -108,18 +121,28 @@ Sending messages to the console is a little less annoying than an alert window. 
 
 Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each. Make sure you can explain why you got each result.
 
-* `if( 5 > 2 )`
-* `if( 5 < 2 )`
+* `if( 5 > 2 )` Unless the laws of mathematics change this would always be true.
+* `if( 5 < 2 )` This one would always be false.
 * `if( myNumber >= 0 )` Use `>=` or `<=` to test greater/less than or equal.
 * `if( myNumber == 3 )` Use `==` to test if two things are equal.
 * `if( myNumber != 3 )` Use `!=` to test if two things are NOT equal. 
-* `if( myNumber = 21 )` Why is this true?
+* `if( myNumber = 21 )` Why does this evaluate as true?
+* Write a statement that tests if myNumber is greater than or equal to 10.
 
 You can use `&&` as a logical 'and' and `||` as a logical 'or'.
 
 * `if( false || myNumber > 2 )`
 * `if( false && myNumber > 2 )`
 * Can you write an if statement to check if myNumber is between 3 and 10?
+
+You can also use comparison between Strings
+
+What happens when you enter the following conditionals?
+
+* `if("Hello" == "Goodbye")`
+* `if("Alligator" < "Baracuda")`
+* `if(myNumber == "telephone")`
+* `if(myNumber == "3")`
 
 ## Loops
 
@@ -137,7 +160,9 @@ while( index < 10 ) {
 * What does this code do?
 * Change it to include the number 10.
 * Change it to list just even numbers.
-* How would you change it to list from 4 to 20?
+* Change it to go from 4 to 20?
+
+Now replace the content of the `<script>` tag with the following:
 
 ```javascript
   for(var index = 0; index < 10; index++) {
@@ -148,12 +173,12 @@ while( index < 10 ) {
 * What does this code do?
 * Change it to include the number 10.
 * Change it to list just even numbers.
-* How would you change it to list from 4 to 20?
-* Can you write a for loop that multiplies all the numbers between 1 and 10 and save the results in a variable?
+* Change it to list from -3 to 17?
+* Can you make the loop go from 20 down to 0.
 
-## Arrays and objects
+## Arrays
 
- Arrays are a list of variables that are accessed via an index. They can contain any value a variable can. Here is an array lists the names of fruits
+ Arrays are a list of variables that are accessed via an index. They can contain any value a variable can. Here is an array with the names of fruits
 
 ```javascript
   var fruit = ["Apples", "Bananas", "Oranges", "Kiwi"];
@@ -161,20 +186,34 @@ while( index < 10 ) {
 
 To access an element of an array we use the name followed by square brackets containing the index of the element we want. `fruit[0]` would access the first element whose value is "Apples". Arrays always start at zero.
 
-Loops are much more powerful when you add arrays. 
+Loops are much more powerful when you add arrays. Replace the code with the following:
 
 ```javascript
+  var fruit = ["Apples", "Bananas", "Oranges", "Kiwi"];
 
   for(var index = 0; index < 4; index++) {
     console.log(fruit[index]);
-  }
-  
+  }  
 ```
 
 * What happens when you run this code?
 * What happens when you change `index < 4` to `index < 10`?
-* You can use `fruit.length` to see how many values the array `fruit` holds. Plug it in where you now have the value 10. Run the code again.
-* Create a new array with a list of values of your choosing.
+* You can use `fruit.length` to see how many values the array `fruit` holds. Plug it in where you now have the value `10`. Run the code again.
+* Create a new array with a list of values of your choosing. Print it out to the console just as you have here.
+
+Sometimes you may want to create an array before you add values to it. There are several ways to do so. 
+
+```javascript
+var arrayName = [];
+```
+
+or
+
+```javascript
+var arrayName = new Array();
+```
+
+Replace the contents of the `<script>` tag with this: 
 
 ```javascript
   var squares = [];
@@ -184,7 +223,9 @@ Loops are much more powerful when you add arrays.
   }
 ```
 
-Objects like arrays let you store more than one value in a single variable but can allow you to name those values and even add additional functionality to the variable that we will talk about later.
+## Objects
+
+Objects like arrays, let you store more than one value in a single variable but can allow you to name those values and even add functions (will talk about these in a minute) to the variable. Even if you don't create your own objects you will use objects all the time in JavaScript.
 
 Instead of this:
 
@@ -200,7 +241,7 @@ I could create an object that holds all of that information.
   var artist = { name: "Barry", medium: "Painting", age: 32 };
 ```  
 
-You can access the values of the object by using square brackets(similar to arrays) or using dot notation. We will primarily use dot notation.
+Notice that instead of square brackets we are using curly braces around objects. You can access the values of the object by using square brackets(similar to arrays) or using dot notation. We will primarily use dot notation.
 
 ```javascript
 artist["name"]
@@ -221,19 +262,44 @@ Functions make it easier to deal with code that you might use again and again.
   hello("Fred");
 ```
 
-* What does this code do?
-
-Functions can do more than just save chunks of code. They can return values to be used else where.
+Functions can do more than just save chunks of code. They can return values to be used elsewhere.
 
 ```javascript
   function square( x ) {
     return x * x;
   }
+  
+  var twoSquared = square(2);
 ```
 
-* Write your own function that returns a value based on input...
+* What does this code do?
 
-## DOM
+Functions can take in more than one variable or no variables at all.
+
+```javascript
+  function add(a, b) {
+    return a + b;
+  }
+  
+  var twoPlusTwo = add(2, 2);
+```
+
+* What does this code do?
+* Write your own function that returns a value based on an input(s)...
+
+## Document Object Model
+
+We have covered a lot of ground today. Before we finish I want to introduce an important part of using JavaScript to enhance webpages: the Document Object Model or DOM. The DOM is a way of representing the webpage (in this case index.html) within JavaScript. It allows us to see what is on the page and to add or change both HTML and CSS. We already uses a little piece of the DOM earlier when we entered the following:
+
+```javascript
+document.getElementsByTagName("h1")[0].textContent
+```
+
+Lets start with that first part `document`. This variable is an *object* that is available whenever you use JavaScript in a browser. It represents the current document or webpage (index.html).
+
+It has many methods and properties one of which is `getElementsByTagName(tag)`. This method (or function) will grab all the elements of the page of a certain tag and returns them in an array.
+
+* 
 
 ## Events
 
