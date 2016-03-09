@@ -297,9 +297,14 @@ document.getElementsByTagName("h1")[0].textContent
 
 Lets start with that first part `document`. This variable is an *object* that is available whenever you use JavaScript in a browser. It represents the current document or webpage (index.html).
 
+The document is stored as tree with a node for each element of the page. Something like this:
+
+![Alt text](dom.svg)
+
+
 It has many methods and properties one of which is `getElementsByTagName(tag)`. This method (or function) will grab all the elements of the page of a certain tag and returns them in an array.
 
-* 
+
 
 ## Events
 
