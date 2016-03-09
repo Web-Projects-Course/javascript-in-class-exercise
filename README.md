@@ -110,9 +110,9 @@ Lets try out some different conditionals statements. Replace the if statement wi
 
 * `if( 5 > 2 )`
 * `if( 5 < 2 )`
-* `if( myNumber >= 0 )`
-* `if( myNumber == 3 )`
-* To test if something is not equal use '!=' like this `if( myNumber != 3 )`
+* `if( myNumber >= 0 )` Use `>=` or `<=` to test greater/less than or equal.
+* `if( myNumber == 3 )` Use `==` to test if two things are equal.
+* `if( myNumber != 3 )` Use `!=` to test if two things are NOT equal. 
 * `if( myNumber = 21 )` Why is this true?
 
 You can use `&&` as a logical 'and' and `||` as a logical 'or'.
