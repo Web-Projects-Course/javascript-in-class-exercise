@@ -7,10 +7,10 @@ Welcome to programming. Up until now you have been dealing exclusively with mark
 This first part can be done completely in the **JavaScript console** inside any browser, on any webpage.
 
 ### Statements
-* Enter <code>alert("Hello World!");</code> into the JavaScript console and hit return.
-* Enter <code>console.log("Hello World!");</code> into the console.
+* Enter `alert("Hello World!");` into the JavaScript console and hit return.
+* Enter `console.log("Hello World!");` into the console.
 * Enter any number. What happens?
-* Enter <code>2 + 4</code>. What happens?
+* Enter `2 + 4`. What happens?
 * Try some other simple equations and see what happens.
 
 ### Variables
@@ -19,80 +19,82 @@ Variables are what make programs flexible tools. If we could only enter numbers 
 
 Lets create our first variable.
 
-* Write the following in the console. <code>var x = 3;</code> This creates the variable x and assigns it the value 3.
-* Enter <code>x</code> and hit return. You should see its value print out.
-* Create another variable <code>y</code>. Assign it the value of <code>x</code>.
+* Write the following in the console. `var x = 3;` This creates the variable x and assigns it the value 3.
+* Enter `x` and hit return. You should see its value print out.
+* Create another variable `y`. Assign it the value of `x`.
 * Check y's value.
-* Assign the variable <code>x</code> the value 5. 
-* What is the value of <code>x</code> and <code>y</code> now? Why?
-* Create a variable <code>foo</code> assign it the String "Hello world ".
-* Create a variable <code>bar</code> assign it the String "5".
+* Assign the variable `x` the value 5. 
+* What is the value of `x` and `y` now? Why?
+* Create a variable `foo` assign it the string "Hello world ".
+* Create a variable `bar` assign it the string "5".
 
 ### Operators
 
-* Enter <code>var sum = x + y</code>. We can create new variables and assign them the results of operations like this.
-* Subtract <code>x</code> and <code>y</code> and assign it to the variable <code>difference</code>.
-* Multiply <code>5</code> and <code>y</code> and assign it to the variable <code>product</code>.
-* Divide <code>9</code> and <code>4</code> and assign it to the variable <code>quotient</code>.
-* Enter <code>var result = 9 % 4</code>.
-* Can you figure out what the <code>%</code> operator(also know as modulo) does? *HINT: It has something to do with division.*
+* Enter `var sum = x + y`. We can create new variables and assign them the results of operations like this.
+* Subtract `x` and `y` and assign it to the variable `difference`.
+* Multiply `5` and `y` and assign it to the variable `product`.
+* Divide `9` and `4` and assign it to the variable `quotient`.
+* Enter `var result = 9 % 4`.
+* Can you figure out what the `%` operator(also know as modulo) does? *HINT: It has something to do with division.*
 
 #### Strings
-* Add <code>foo</code> and <code>bar</code> and assign to the variable <code>combined</code>. What is the value of <code>combined</code>?
-* Add <code>foo</code> and <code>x</code> and assign to <code>d</code>. What is the value of <code>d</code>?
-* Add <code>x</code> and <code>foo</code> and assign to <code>e</code>. What is the value of <code>e</code>?
+* Add `foo` and `bar` and assign to the variable `combined`. What is the value of `combined`?
+* Add `foo` and `x` and assign to `d`. What is the value of `d`?
+* Add `x` and `foo` and assign to `e`. What is the value of `e`?
 * Can you explain what happened?
-* Add <code><code>x</code></code> and <code>bar</code> and assign to <code>f</code>.
-* Add <code>x</code> and Number(<code>bar</code>) and assign to <code>g</code>.
-* Why are <code>f</code> and <code>g</code> different?
-* Enter <code>var h = x + Number(foo)</code>. What is the value of <code>h</code>?
+* Add `x` and `bar` and assign to `f`.
+* Add `x` and Number(`bar`) and assign to `g`.
+* Why are `f` and `g` different?
+* Enter `var h = x + Number(foo)`. What is the value of `h`?
 
 #### Other operators
 
-* What is the current value of <code>x</code>?
-* Enter <code>w = x++</code>
-* What are the values of <code>x</code> and <code>w</code>? What happened?
-* Enter <code>v = ++x</code>
-* What are the values of <code>x</code> and <code>v</code>? What happened?
-* Enter <code>x += 10;</code> What is the value of <code>x</code> now?
+* What is the current value of `x`?
+* Enter `w = x++`
+* What are the values of `x` and `w`? What happened?
+* Enter `v = ++x`
+* What are the values of `x` and `v`? What happened?
+* Enter `x += 10;` What is the value of `x` now?
 
 ## Part II
 
-Now lets work with JavaScript from within an HTML document. Open the <code>index.html</code> document included in this repository. It should contain the basic tags we have seen before. 
+Now lets work with JavaScript from within an HTML document. Open the `index.html` document included in this repository. It should contain the basic tags we have seen before. 
 
 Lets start by recreating our Hello world example from above. 
 
 First we need a place for our JavaScript in the document. Normally you want to load the JavaScript last, after the CSS and most of the HTML has loaded. This way viewers will see the main content first. 
 
-We will place ours just before the closing <code>&lt;/body</code> tag. Enter the following:
+We will place ours just before the closing `</body>` tag. Enter the following:
 
-<pre><code>
-&lt;script&gt;
+```javascript
+<script>
 
 alert("Hello world");
 
-&lt;/script&gt;
-</code></pre>
+</script>
+```
 
 Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. Open the page in the browser, or if you already have reload it.
 
 ## Conditionals
 
-Replace the contents of the <code>&lt;script&gt;</code> tag and replace it with the following:
+Conditionals allow us to branch our code. Doing one thing if something is true and another if it is false.
 
-<pre><code>
+Replace the contents of the `<script>` tag with the following:
+
+```javascript
 var myNumber = 3;
 
 if ( myNumber == 3 ) {
   alert("Its true!");
 }
-</code></pre>
+```
 
-This statement evaluates whether myNumber is equals 3. If it is we popup an alert message. Note that there are two equal signs between myNumber and 3.
+This statement evaluates whether myNumber equals 3, if it does, we popup an alert message. Note that there are two equal signs between myNumber and 3.
 
 Before we go on lets switch the code to the following:
 
-<pre><code>
+```javascript
 var myNumber = 3;
 
 if ( myNumber == 3 ) {
@@ -100,43 +102,48 @@ if ( myNumber == 3 ) {
 } else {
   console.log("Its false");
 }
-</code></pre>
+```
 
 Sending messages to the console is a little less annoying than an alert window. The else clause allows to run different code if the answer is false. Now make sure the JavaScript console is open and reload the page.
 
-Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each.
+Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each. Make sure you can explain why you got each result.
 
-* <code>if( 5 &gt; 2 )</code>
-* <code>if( 5 &lt; 2 )</code>
-* <code>if( myNumber &gt;= 0 )</code>
-* <code>if( myNumber == 3 )</code>
-* <code>if( myNumber = 6 )</code>
-* <code>if( myNumber != 7 )</code>
-* <code>if( false || myNumber &gt; 2 )</code>
-* <code>if( false && myNumber &gt; 2 )</code>
-* <code>if( myNumber &gt; 3 && myNumber &lt; 8 )</code>
+* `if( 5 > 2 )`
+* `if( 5 < 2 )`
+* `if( myNumber >= 0 )`
+* `if( myNumber == 3 )`
+* To test if something is not equal use '!=' like this `if( myNumber != 3 )`
+* `if( myNumber = 21 )` Why is this true?
+
+You can use `&&` as a logical 'and' and `||` as a logical 'or'.
+
+* `if( false || myNumber > 2 )`
+* `if( false && myNumber > 2 )`
+* Can you write an if statement to check if myNumber is between 3 and 10?
 
 ## Loops
 
-<pre><code>
-  var index = 0;
-  
-  while( index &lt; 10 ) {
-    console.log(index);
-    index = index + 1;
-  }
-</code></pre>
+Loops keep us from writing the same code over and over again. Replace the contents of the `<script>` tag with the following:
+
+```javascript
+var index = 0;
+
+while( index < 10 ) {
+  console.log(index);
+  index = index + 1;
+}
+```
 
 * What does this code do?
 * Change it to include the number 10.
 * Change it to list just even numbers.
 * How would you change it to list from 4 to 20?
 
-<pre><code>
-  for(var index = 0; index &lt; 10; index++) {
+```javascript
+  for(var index = 0; index < 10; index++) {
     console.log(index);
   }
-</code></pre>
+```
 
 * What does this code do?
 * Change it to include the number 10.
@@ -145,54 +152,61 @@ Lets try out some different conditionals statements. Replace the if statement wi
 
 ## Arrays and objects
 
-Loops are much more powerful when you add arrays.
+ Arrays are a list of variables that are accessed via an index. They can contain any value a variable can. Here is an array lists the names of fruits
 
-<pre><code>
+```javascript
   var fruit = ["Apples", "Bananas", "Oranges", "Kiwi"];
- 
-  for(var index = 0; index &lt; 4; index++) {
+```
+
+To access an element of an array we use the name followed by square brackets containing the index of the element we want. `fruit[0]` would access the first element whose value is "Apples". Arrays always start at zero.
+
+Loops are much more powerful when you add arrays. 
+
+```javascript
+
+  for(var index = 0; index < 4; index++) {
     console.log(fruit[index]);
   }
-</code></pre>
+  
+```
 
 * What happens when you run this code?
-* What happens when you change <code>index &lt; 4</code> to <code>index &lt; 10</code>?
-* You can use fruit.length to see how many values fruit holds. Plug it in where you now have the value 10. Run the code again.
+* What happens when you change `index < 4` to `index < 10`?
+* You can use `fruit.length` to see how many values the array `fruit` holds. Plug it in where you now have the value 10. Run the code again.
+* Create a new array with a list of values of your choosing.
 
-<pre><code>
+```javascript
   var squares = [];
  
-  for(var index = 0; index &lt; fruit.length; index++) {
+  for(var index = 0; index < fruit.length; index++) {
     squares[index] = index * index;
   }
-</code></pre>
+```
 
 * What happens when you run this code?
+* Can you write a for loop that multiplies all the numbers between 1 and 10 and save the results in a variable?
+
+
 
 ## Functions
 
-<pre><code>
+Functions make it easier to deal with code that you might use again and again.
+
+```javascript
   function hello(name) {
     console.log("Hello " + name);
   }
   
   hello("Fred");
-</code></pre>
+```
 
 * What does this code do?
 
-<pre><code>
-  function hello(name) {
-    return ("Hello " + name);
-  }
-  
-  console.log( hello("Fred") );
-</code></pre>
+Functions can do more than just save chunks of code. They can return values to be used else where.
 
+```javascript
 
-
-
-
+```
 
 ## DOM
 
