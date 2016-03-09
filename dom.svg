@@ -1,0 +1,69 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 357">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <title>dom</title>
+  <line class="cls-1" x1="356" y1="237" x2="221" y2="294"/>
+  <line class="cls-1" x1="266" y1="294" x2="356" y2="237"/>
+  <line class="cls-1" x1="311" y1="294" x2="356" y2="237"/>
+  <line class="cls-1" x1="356" y1="294" x2="356" y2="237"/>
+  <line class="cls-1" x1="400" y1="294" x2="356" y2="237"/>
+  <line class="cls-1" x1="445" y1="294" x2="356" y2="237"/>
+  <line class="cls-1" x1="490" y1="294" x2="356" y2="237"/>
+  <line class="cls-2" x1="166" y1="205" x2="261" y2="152"/>
+  <line class="cls-2" x1="231" y1="205" x2="261" y2="152"/>
+  <line class="cls-2" x1="293" y1="205" x2="261" y2="152"/>
+  <line class="cls-2" x1="356" y1="205" x2="261" y2="152"/>
+  <rect class="cls-2" x="149" y="30" width="58" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="58" y="120" width="58" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="58" y="205" width="58" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="211" y="205" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="336" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="291" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="246" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="201" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="380" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="425" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="470" y="294" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="146" y="205" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="273" y="205" width="40" height="32.56" rx="16" ry="16"/>
+  <rect class="cls-2" x="234" y="120" width="58" height="32.56" rx="16" ry="16"/>
+  <line class="cls-2" x1="178" y1="62" x2="87" y2="120"/>
+  <line class="cls-2" x1="263" y1="120" x2="178" y2="62"/>
+  <line class="cls-2" x1="87" y1="152" x2="87" y2="205"/>
+  <text class="cls-3" transform="translate(163 50)">html</text>
+  <text class="cls-3" transform="translate(71 140)">head</text>
+  <text class="cls-3" transform="translate(247 140)">body</text>
+  <text class="cls-3" transform="translate(74 226)">title</text>
+  <text class="cls-3" transform="translate(158 226)">h1</text>
+  <text class="cls-3" transform="translate(227 226)">p</text>
+  <text class="cls-3" transform="translate(288 226)">p</text>
+  <rect class="cls-2" x="336" y="205" width="40" height="32.56" rx="16" ry="16"/>
+  <text class="cls-3" transform="translate(349 226)">ul</text>
+  <text class="cls-3" transform="translate(262 317)">li</text>
+  <text class="cls-3" transform="translate(217 317)">li</text>
+  <text class="cls-3" transform="translate(352 317)">li</text>
+  <text class="cls-3" transform="translate(307 317)">li</text>
+  <text class="cls-3" transform="translate(397 317)">li</text>
+  <text class="cls-3" transform="translate(486 317)">li</text>
+  <text class="cls-3" transform="translate(441 317)">li</text>
+</svg>
