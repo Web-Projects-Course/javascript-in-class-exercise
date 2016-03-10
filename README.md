@@ -73,15 +73,16 @@ These operators are used for incrementing values and are common to see in others
 
 That is a very quick introduction to variables and operators. We will continue to use them in a little bit as we go deeper.
 
-###STOP here before continuing to Part II
+###STOP
+#### We will cover Part II in a little bit
 
 ---
 
-## Part II
+## Part II: Conditionals, loops, and functions
 
 Now lets work with JavaScript from within an HTML document. 
 
-* Open the `index.html` document included in this repository.
+* Open the `index.html` document included in this repository in Brackets.
 
 It should contain the basic HTML tags we have seen before.  Lets start by recreating our "Hello world" example from above. 
 
@@ -97,7 +98,9 @@ alert("Hello world");
 </script>
 ```
 
-Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. Open the page in the browser or if you already have, reload it. Open the JavaScript console as we did in Part I.
+Normally we will place our JavaScript in a separate file, but today we will just embed it in the HTML document. We will be placing all our code today between these script tags. 
+
+* Open the page in the browser or if you already have, reload it. Open the JavaScript console as we did in Part I.
 
 *Keep in mind that Live Preview in Brackets won't work with the JavaScript console open.*
 
