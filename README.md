@@ -4,7 +4,11 @@ Welcome to programming. Up until now you have been dealing exclusively with mark
 
 ##Part 1
 
-This first part can be done completely in the **JavaScript console** inside any browser, on any webpage.
+This first part can be done completely in the **JavaScript console** inside any browser, on any webpage. 
+
+To open the JavaScript console:
+  * **Chrome** Go to *View>Developer>JavaScript Console*
+  * **Firefox** Go to *Tools>Web Developer>Web Console*
 
 ### Statements
 * Enter `alert("Hello World!");` into the JavaScript console and hit return.
