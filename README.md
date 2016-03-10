@@ -295,18 +295,105 @@ We have covered a lot of ground today. Before we finish I want to introduce an i
 document.getElementsByTagName("h1")[0].textContent
 ```
 
-Lets start with that first part `document`. This variable is an *object* that is available whenever you use JavaScript in a browser. It represents the current document or webpage (index.html).
+Lets start with that first part `document`. This is an *object* that is available whenever you use JavaScript in a browser. It represents the current document or webpage (index.html).
 
-The document is stored as tree with a node for each element of the page. Something like this:
+The document is stored as tree with a node for each element of the page. For `index.html` it looks something like this. 
 
 ![Alt text](dom.svg)
 
-
-It has many methods and properties one of which is `getElementsByTagName(tag)`. This method (or function) will grab all the elements of the page of a certain tag and returns them in an array.
-
+There is actually a lot more nodes that you cannot see here, but these are the ones we will focus on. You can see that each node is a child of the node that it is nested inside. The `title` node is the child of the `head` node because the `<title>` tag is nested inside the `<head>` tag.
 
 
-## Events
+
+### Access parts of the DOM
+
+The `document` object has many methods and properties to access and change this tree of nodes. One method is `getElementsByTagName(tag)`. This method (or function) will grab all the elements of the page of a certain tag and returns them in an array.
+
+Lets give it a try. Start by replacing the contents of the `<script>` tag with this:
+
+```
+var paragraphs = document.getElementsByTagName("p");
+```
+
+This will save the array that `getElementsByTagName` returns into a new variable paragraphs. This array holds all the paragraph nodes in the document. Lets look at the first paragraph in the array. Add the next line:
+
+```
+console.log(paragraphs[0]);
+```
+This should print out the tag and text of the first paragraph. If we want just the text inside we can reference the `textContent` property of the node. You can use the dot notation like this.
+
+```
+console.log(paragraphs[0].textContent);
+```
+
+Now lets try to combined some of what we learned earlier. 
+
+* Create a for loop that loops through the `p` nodes in `paragraphs` array and prints them out to the console.
+
+
+### Change parts of the DOM
+
+We can use these nodes not just to view the contents of nodes but to change them. Try this.
+
+```
+paragraphs[0].textContent = "It was the best of times, it was the worst of time."
+```
+
+### Add elements to the page
+
+Adding elements to the page is a two part process.
+
+1. Create the new element
+2. Find the element we want to add it to.
+2. Append the new element to the DOM.
+
+First lets create a new paragraph:
+
+```
+var newParagraph = document.createElement("p");
+var paragraphContents = document.createTextNode("Something new and different.");
+newParagraph.appendChild(paragraphContents);
+```
+
+The document object in addition to hold the DOM tree has methods(functions) for creating new elements. Here we are creating a new `<p>` tag and appending some text to it. The contents of a tag are represented as a child node of the tag. This new element is not part of the DOM yet however. Lets add it to the tree.
+
+Next lets grab the body node.
+
+```
+var bodyTags = document.getElementsByTagName("body");
+var body = bodyTags[0];
+```
+
+First we grabbed the array of body tags (`bodyTags`). Then we grab the first element of that array and assign it to the variable `body`. We can actually shorten this series of tags if we want.
+
+``` 
+var body = document.getElementsByTagName("body")[0];
+```
+
+Now we need to append the new paragraph to the body. This is the same process as adding the text node.
+
+```
+body.appendChild(newParagraph);
+```
+
+That is a lot of work to just create what we could much more simply create in HTML. The advantage is we can now change any part of our webpage at anytime we want. We will get to that timing next week.
+
+To put it all together here is what we just did:
+
+
+```
+//Create new paragraph element.
+var newParagraph = document.createElement("p");
+var paragraphContents = document.createTextNode("Something new and different.");
+newParagraph.appendChild(paragraphContents);
+
+//Find the body tag in the DOM
+var body = document.getElementsByTagName("body")[0];
+
+//Add our new paragraphy to the body tag
+body.appendChild(newParagraph);
+```
+
 
 
 
