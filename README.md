@@ -15,7 +15,13 @@ To open the JavaScript console:
 * Enter any number. What happens?
 * Enter `2 + 4`. What happens?
 * Try some other simple math equations and see what happens.
-* Here is something more complex. We will talk about the details later. `document.getElementsByTagName("h1")[0].textContent`. For now just see what it does. Don't worry if you get an error.
+* Here is something more complex. We will talk about the details later.
+
+```javascript
+document.getElementsByTagName("h1")[0].textContent
+```
+
+For now just see what it does. Don't worry if you get an error.
 
 ### Variables
 
