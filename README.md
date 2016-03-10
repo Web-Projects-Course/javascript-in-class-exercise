@@ -29,10 +29,10 @@ Variables are what make programs flexible tools. If we could only enter numbers 
 
 Lets create our first variable.
 
-* Write the following in the console. `var x = 3;` This creates the variable x and assigns it the value 3.
+* Write the following in the console. `var x = 3;` Hit return. This creates the variable x and assigns it the value 3.
 * Enter `x` and hit return. You should see its value print out.
 * Create another variable `y`. Assign it the value of `x`.
-* Check y's value.
+* Check `y`'s value.
 * Assign the variable `x` the value 5. 
 * What is the value of `x` and `y` now? Why?
 * Create a variable `foo` assign it the string "Hello world ".
@@ -43,9 +43,9 @@ Lets create our first variable.
 Once you have variables you will want to do something with them.
 
 * Enter `var sum = x + y`. We can create new variables and assign them the results of operations like this.
-* Subtract `x` and `y` and assign it to the variable `difference`.
-* Multiply `5` and `y` and assign it to the variable `product`.
-* Divide `9` and `4` and assign it to the variable `quotient`.
+* Use `-` operator to subtract  `x` and `y` and assign it to the variable `difference`.
+* Use `*` operator to multiply `5` and `y` and assign it to the variable `product`.
+* Use `/` operator to divide `9` and `4` and assign it to the variable `quotient`.
 * Enter `var result = 9 % 4`.
 * Can you figure out what the `%` operator(also know as modulo) does? *HINT: It has something to do with division.*
 
@@ -56,22 +56,24 @@ Once you have variables you will want to do something with them.
 * Add `x` and `foo` and assign to `e`. What is the value of `e`?
 * Can you explain what happened?
 * Add `x` and `bar` and assign to `f`.
-* Add `x` and Number(`bar`) and assign to `g`.
-* Why are `f` and `g` different?
-* Enter `var h = x + Number(foo)`. What is the value of `h`?
+* Add `x` and `Number(bar)` and assign to `g`. `Number` function converts strings to numbers. We will talk more about functions later.
 
 #### Other operators
 
 These operators are used for incrementing values and are common to see in others code.
 
 * What is the current value of `x`?
+* Enter `x++`. 
+* What is the value of x now?
 * Enter `w = x++`
 * What are the values of `x` and `w`? What happened?
 * Enter `v = ++x`
 * What are the values of `x` and `v`? What happened?
 * Enter `x += 10;` What is the value of `x` now?
 
-**STOP here before continuing to Part II**
+That is a very quick introduction to variables and operators. We will continue to use them in a little bit as we go deeper.
+
+###STOP here before continuing to Part II
 
 ---
 
