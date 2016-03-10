@@ -118,7 +118,7 @@ if ( myNumber == 3 ) {
 }
 ```
 
-This statement evaluates whether myNumber equals 3, if it does, we popup an alert message. Note that there are two equal signs between myNumber and 3.
+This statement evaluates whether `myNumber` equals 3, if it does, we popup an alert message. Note that there are two equal signs between `myNumber` and 3.
 
 Before we go on lets switch the code to the following:
 
@@ -132,7 +132,7 @@ if ( myNumber == 3 ) {
 }
 ```
 
-Sending messages to the console is a little less annoying than an alert window. The else clause allows to run different code if the answer is false. Now make sure the JavaScript console is open and reload the page.
+The else clause allows us to run different code if the answer is false. Sending messages to the console is a little less annoying than an alert window. Now make sure the JavaScript console is open and reload the page.
 
 Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each. Make sure you can explain why you got each result.
 
@@ -150,7 +150,7 @@ You can use `&&` as a logical 'and' and `||` as a logical 'or'.
 * `if( false && myNumber > 2 )`
 * Can you write an if statement to check if myNumber is between 3 and 10?
 
-You can also use comparison between Strings
+You can also use comparisons between Strings
 
 What happens when you enter the following conditionals?
 
@@ -161,7 +161,7 @@ What happens when you enter the following conditionals?
 
 ## Loops
 
-Loops keep us from writing the same code over and over again. Replace the contents of the `<script>` tag with the following:
+Loops keep us from writing the same code over and over again. Replace the contents of the `<script>` tag with the following, save and reload:
 
 ```javascript
 var index = 0;
@@ -175,9 +175,9 @@ while( index < 10 ) {
 * What does this code do?
 * Change it to include the number 10.
 * Change it to list just even numbers.
-* Change it to go from 4 to 20?
+* Change it to go from 4 to 20.
 
-Now replace the content of the `<script>` tag with the following:
+Now replace the contents of the `<script>` tag with the following:
 
 ```javascript
   for(var index = 0; index < 10; index++) {
