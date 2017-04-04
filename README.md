@@ -15,6 +15,8 @@ To open the JavaScript console:
 * Enter any number. What happens?
 * Enter `2 + 4`. What happens?
 * Try some other simple math equations and see what happens.
+* Enter `document.write("Hello World")` What happens.
+* Refresh the page.
 * Here is something more complex. We will talk about the details later.
 
 ```javascript
@@ -31,12 +33,12 @@ Lets create our first variable.
 
 * Write the following in the console. `var x = 3;` Hit return. This creates the variable x and assigns it the value 3.
 * Enter `x` and hit return. You should see its value print out.
-* Create another variable `y`. Assign it the value of `x`.
+* Let's declare another variable: `var greeting = "Hello!";`
+* Enter `greeting` and hit return. What do you see?
+* Create another variable `y`. Assign it the value of `x` by typing `y = x`.
 * Check `y`'s value.
 * Assign the variable `x` the value 5. 
-* What is the value of `x` and `y` now? Why?
-* Create a variable `foo` assign it the string "Hello world ".
-* Create a variable `bar` assign it the string "5".
+* What is the value of `x` and `y` now? Can you explain to your partner what happened?
 
 ### Operators
 
@@ -47,38 +49,16 @@ Once you have variables you will want to do something with them.
 * Use `*` operator to multiply `5` and `y` and assign it to the variable `product`.
 * Use `/` operator to divide `9` and `4` and assign it to the variable `quotient`.
 * Enter `var result = 9 % 4`.
-* Can you figure out what the `%` operator(also know as modulo) does? *HINT: It has something to do with division.*
+* Can you figure out what the `%` operator(also know as modulo) does? Try other values. *HINT: It has something to do with division.*
 
 #### Using operators on strings
 
-* Add `foo` and `bar` and assign to the variable `combined`. What is the value of `combined`?
-* Add `foo` and `x` and assign to `d`. What is the value of `d`?
-* Add `x` and `foo` and assign to `e`. What is the value of `e`?
-* Can you explain what happened?
-* Add `x` and `bar` and assign to `f`.
-* Add `x` and `Number(bar)` and assign to `g`. `Number` function converts strings to numbers. We will talk more about functions later.
-
-#### Other operators
-
-These operators are used for incrementing values and are common to see in others code.
-
-* What is the current value of `x`?
-* Enter `x++`. 
-* What is the value of x now?
-* Enter `w = x++`
-* What are the values of `x` and `w`? What happened?
-* Enter `v = ++x`
-* What are the values of `x` and `v`? What happened?
-* Enter `x += 10;` What is the value of `x` now?
+* Using what you know create a variable called `foo` and assign it the value `"Hello"`
+* Create a variable called `bar` and assign it the value `"World!"`
+* Type `foo + bar`. What happens?
+* How can you make the words print out correctly?
 
 That is a very quick introduction to variables and operators. We will continue to use them in a little bit as we go deeper.
-
-###STOP
-#### We will cover Part II in a little bit
-
----
-
-## Part II: Conditionals, loops, and functions
 
 Now lets work with JavaScript from within an HTML document. 
 
@@ -132,7 +112,7 @@ if ( myNumber == 3 ) {
 }
 ```
 
-The else clause allows us to run different code if the answer is false. Sending messages to the console is a little less annoying than an alert window. Now make sure the JavaScript console is open and reload the page.
+The else clause allows us to run different code if the answer is false. Sending messages to the Javascript console is a little less annoying than an alert window. Now make sure the JavaScript console is open and reload the page.
 
 Lets try out some different conditionals statements. Replace the if statement with the following. Be sure to reload the page after each. Make sure you can explain why you got each result.
 
@@ -141,14 +121,8 @@ Lets try out some different conditionals statements. Replace the if statement wi
 * `if( myNumber >= 0 )` Use `>=` or `<=` to test greater/less than or equal.
 * `if( myNumber == 3 )` Use `==` to test if two things are equal.
 * `if( myNumber != 3 )` Use `!=` to test if two things are NOT equal. 
-* `if( myNumber = 21 )` Why does this evaluate as true?
+* `if( myNumber = 21 )` Why does this evaluate as true? HINT: Check the value of myNumber.
 * Write a statement that tests if myNumber is greater than or equal to 10.
-
-You can use `&&` as a logical 'and' and `||` as a logical 'or'.
-
-* `if( false || myNumber > 2 )`
-* `if( false && myNumber > 2 )`
-* Can you write an if statement to check if myNumber is between 3 and 10?
 
 You can also use comparisons between Strings
 
@@ -173,7 +147,7 @@ while( index < 10 ) {
 ```
 
 * What does this code do?
-* Change it to include the number 10.
+* Can you change it to include the number 10?
 * Change it to list just even numbers.
 * Change it to go from 4 to 20.
 
@@ -190,6 +164,13 @@ Now replace the contents of the `<script>` tag with the following:
 * Change it to list just even numbers.
 * Change it to list from -3 to 17?
 * Can you make the loop go from 20 down to 0.
+
+###STOP
+#### We will cover Part III in a little bit
+
+---
+
+## Part III: Conditionals, loops, and functions
 
 ## Arrays
 
@@ -238,33 +219,6 @@ Replace the contents of the `<script>` tag with this:
   }
 ```
 
-## Objects
-
-Objects like arrays, let you store more than one value in a single variable but can allow you to name those values and even add functions (will talk about these in a minute) to the variable. Even if you don't create your own objects you will use objects all the time in JavaScript.
-
-Instead of this:
-
-```javascript
-  var artistName = "Barry";
-  var artistMedium = "Painting";
-  var artistAge = 32;
-```
-
-I could create an object that holds all of that information.
-
-```javascript
-  var artist = { name: "Barry", medium: "Painting", age: 32 };
-```  
-
-Notice that instead of square brackets we are using curly braces around objects. You can access the values of the object by using square brackets(similar to arrays) or using dot notation. We will primarily use dot notation.
-
-```javascript
-artist["name"]
-
-artist.name
-```
-You will see dot notation frequently. It can be used to refer to an objects properties (variables) or its methods (functions that run code).
-
 ## Functions
 
 Functions make it easier to deal with code that you might use again and again.
@@ -301,6 +255,33 @@ Functions can take in more than one variable or no variables at all.
 
 * What does this code do?
 * Write your own function that returns a value based on an input(s)...
+
+## Objects
+
+Objects like arrays, let you store more than one value in a single variable but can allow you to name those values and even add functions (will talk about these in a minute) to the variable. Even if you don't create your own objects you will use objects all the time in JavaScript.
+
+Instead of this:
+
+```javascript
+  var artistName = "Barry";
+  var artistMedium = "Painting";
+  var artistAge = 32;
+```
+
+I could create an object that holds all of that information.
+
+```javascript
+  var artist = { name: "Barry", medium: "Painting", age: 32 };
+```  
+
+Notice that instead of square brackets we are using curly braces around objects. You can access the values of the object by using square brackets(similar to arrays) or using dot notation. We will primarily use dot notation.
+
+```javascript
+artist["name"]
+
+artist.name
+```
+You will see dot notation frequently. It can be used to refer to an objects properties (variables) or its methods (functions that run code).
 
 ## Document Object Model
 
