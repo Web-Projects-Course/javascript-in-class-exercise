@@ -165,14 +165,52 @@ Now replace the contents of the `<script>` tag with the following:
 * Change it to list from -3 to 17?
 * Can you make the loop go from 20 down to 0.
 
-### STOP
-#### We will cover Part III in a little bit
+# STOP
+#### We will cover Part II in a little bit
 
 ---
 
-## Part III: Conditionals, loops, and functions
+## Part II: Functions, arrays and objects
 
-## Arrays
+### Functions
+
+Functions make it easier to deal with code that you might use again and again.
+
+```javascript
+  function hello(name) {
+    console.log("Hello " + name);
+  }
+  
+  hello("Fred");
+```
+
+Functions can do more than just save chunks of code. They can return values to be used elsewhere.
+
+```javascript
+  function square( x ) {
+    return x * x;
+  }
+  
+  var twoSquared = square(2);
+```
+
+* What does this code do?
+
+Functions can take in more than one variable or no variables at all.
+
+```javascript
+  function add(a, b) {
+    return a + b;
+  }
+  
+  var twoPlusTwo = add(2, 2);
+```
+
+* What does this code do?
+* Write your own function that returns a value based on an input(s)...
+
+
+### Arrays
 
  Arrays are a list of variables that are accessed via an index. They can contain any value a variable can. Here is an array with the names of fruits
 
@@ -219,44 +257,7 @@ Replace the contents of the `<script>` tag with this:
   }
 ```
 
-## Functions
-
-Functions make it easier to deal with code that you might use again and again.
-
-```javascript
-  function hello(name) {
-    console.log("Hello " + name);
-  }
-  
-  hello("Fred");
-```
-
-Functions can do more than just save chunks of code. They can return values to be used elsewhere.
-
-```javascript
-  function square( x ) {
-    return x * x;
-  }
-  
-  var twoSquared = square(2);
-```
-
-* What does this code do?
-
-Functions can take in more than one variable or no variables at all.
-
-```javascript
-  function add(a, b) {
-    return a + b;
-  }
-  
-  var twoPlusTwo = add(2, 2);
-```
-
-* What does this code do?
-* Write your own function that returns a value based on an input(s)...
-
-## Objects
+### Objects
 
 Objects like arrays, let you store more than one value in a single variable but can allow you to name those values and even add functions (will talk about these in a minute) to the variable. Even if you don't create your own objects you will use objects all the time in JavaScript.
 
@@ -283,7 +284,12 @@ artist.name
 ```
 You will see dot notation frequently. It can be used to refer to an objects properties (variables) or its methods (functions that run code).
 
-## Document Object Model
+# STOP
+#### We will cover Part III in a little bit
+
+---
+
+## Part III: Document Object Model
 
 We have covered a lot of ground today. Before we finish I want to introduce an important part of using JavaScript to enhance webpages: the Document Object Model or DOM. The DOM is a way of representing the webpage (in this case index.html) within JavaScript. It allows us to see what is on the page and to add or change both HTML and CSS. We already uses a little piece of the DOM earlier when we entered the following:
 
