@@ -165,7 +165,7 @@ Now replace the contents of the `<script>` tag with the following:
 * Change it to list from -3 to 17?
 * Can you make the loop go from 20 down to 0.
 
-###STOP
+### STOP
 #### We will cover Part III in a little bit
 
 ---
